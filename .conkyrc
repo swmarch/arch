@@ -1,0 +1,8 @@
+out_to_x no
+out_to_console yes
+update_interval 1.0
+total_run_times 0
+use_spacer none
+TEXT
+${if_mpd_playing}^i(/usr/share/icons/stlarch_icons/note3.xbm) ${mpd_title}
+${endif}^i(/usr/share/icons/stlarch_icons/arch1.xbm) ${uptime_short} ^i(/usr/share/icons/stlarch_icons/mem1.xbm) $mem ^i(/usr/share/icons/stlarch_icons/cpu1.xbm) ${cpu}% ^i(/usr/share/icons/stlarch_icons/clock2.xbm) ${time %l:%M%P - %m/%d/%y} ^i(/usr/share/icons/stlarch_icons/batt1full.xbm) ${battery_short}
